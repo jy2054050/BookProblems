@@ -22,11 +22,11 @@ public class RemoveDuplicate {
 		int num=5;
 	//	System.out.println(array.length);
 		RemoveDuplicate rm =new RemoveDuplicate(14, array,num);
-		//System.out.println(array.length);
-//		System.out.println(array[pivot]);
 		
 		rm.removeFunction();
 		System.out.println(index+1);
+		for(int i=0; i<size;i++) System.out.print(A[i] +" ");
+		//System.out.println(Arrays.toString(A));
 	}
 
 	private void removeFunction() {
@@ -37,6 +37,6 @@ public class RemoveDuplicate {
 				A[index++]=A[i];
 			}
 		}
-		
+		size=index;
 	}
 }
