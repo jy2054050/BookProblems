@@ -7,6 +7,7 @@ import java.util.LinkedList;
 import java.util.Map;
 import java.util.Map.Entry;
 
+//Find the k most frequent words from a file
 public class FrequentWords {
 
 	
@@ -52,7 +53,7 @@ public class FrequentWords {
 			  if(arr[i]!=null){
 			Iterator<String> iterator = arr[i].iterator();
 			      while (iterator.hasNext()) {
-		            System.out.println(iterator.next()+" ");
+		            System.out.println(iterator.next()+" "+ i);
 		            counter++;
 		        }
 			  }
